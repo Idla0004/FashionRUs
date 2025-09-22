@@ -1,0 +1,114 @@
+h1,
+h2 {
+  font-family: Poppins;
+  color: black;
+  margin-bottom: 0rem;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.navbar {
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-top: 20px;
+  margin-left: 40px;
+}
+
+.navbar h1 {
+  margin-right: auto;
+  color: black;
+  letter-spacing: -0.2rem;
+  line-height: 1;
+  font-weight: bolder;
+  font-size: 60px;
+}
+.navbar h1 span {
+  display: inline-block;
+  transform: scaleX(-1) translateX(-0.2rem);
+  color: red;
+  letter-spacing: -0.2rem;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 30px;
+  margin-right: 40px;
+  background-color: rgba(178, 178, 178, 0.466);
+  padding: 25px;
+  border-radius: 2px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.04rem;
+}
+
+.navbar-right a:hover {
+  color: rgb(96, 96, 96);
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.homeheader {
+  font-size: 2.441rem;
+  letter-spacing: -0.12rem;
+  line-height: 1.2;
+  margin-left: 40px;
+}
+
+.listlink {
+  padding: 50px;
+  margin: 10px;
+  background-color: #7a7a7ac3;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.listlink:hover {
+  background-color: #a9a9a9c3;
+  color: rgb(64, 64, 64);
+  font-weight: bolder;
+  transition: 0.5s;
+  transform: scale(1.01);
+}
+
+.product-grid {
+  font-family: Open-Sans;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  padding: 20px;
+}
+
+footer {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 200px;
+  gap: 3rem;
+  background-color: rgba(178, 178, 178, 0.466);
+  padding: 25px;
+  border-radius: 2px;
+}
+
+footer a {
+  margin: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(66, 66, 66);
+  letter-spacing: 0.04rem;
+}
