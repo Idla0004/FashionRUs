@@ -25,7 +25,7 @@ fetch("https://kea-alt-del.dk/t7/api/products/1525")
           <h1 class="product-title">${product.brandname}</h1>
           <div class="product-info">
             <p class="product-description">
-             ${product.brandbio}
+            ${product.brandbio}
             </p>
             <dl class="info-list">
               <dt>Type</dt>
