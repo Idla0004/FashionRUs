@@ -1,13 +1,14 @@
 const mainContent = document.querySelector("#mainContent");
-fetch("https://kea-alt-del.dk/t7/api/products/1525")
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
   .then((res) => res.json())
-  .then((product) => {
-    console.log(product.articletype);
+  .then(showProduct);
 
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get("id");
-
-    mainContent.innerHTML = ` <nav class="listproduct">
+function showProduct(product) {
+  mainContent.innerHTML = ` <nav class="listproduct">
         <li><a href="index.html">Home</a></li>
         <li><a href="productlist.html">Brands</a></li>
         <li><a href="#">Puma</a></li>
@@ -46,4 +47,4 @@ fetch("https://kea-alt-del.dk/t7/api/products/1525")
           </div>
         </section>
       </section> `;
-  });
+}
