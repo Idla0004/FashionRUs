@@ -150,7 +150,9 @@ h2 {
   font-weight: bold;
   background-color: red;
   padding: 5px 8px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  max-width: 40px;
   height: fit-content;
 }
 
@@ -276,7 +278,7 @@ dt {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.362);
   padding: 20px;
-  height: 250px;
+  height: 300px;
   width: 100%;
   max-width: 400px;
   margin: 10px;

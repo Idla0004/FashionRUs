@@ -39,9 +39,19 @@ function showProduct(product) {
           </div>
         </div>
         <section class="buy-card">
-          <h1>Puma backpack</h1>
+          <h1>${product.brandname}</h1>
           <p class="title">${product.variantname}</p>
-          <p class="product-price">DKK ${product.price}</p>
+           <p class="product-price">
+    DKK ${Math.round(product.price)},-
+    ${
+      product.discount
+        ? `<br>Now: DKK ${Math.round(
+            product.price - (product.price * product.discount) / 100
+          )},-`
+        : ""
+    }
+  </p>
+  ${product.discount ? `<p class="percent">${product.discount}%</p>` : ""}
           <div class="buy-button">
             <a href="#">Add to basket</a>
           </div>
