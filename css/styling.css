@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   text-decoration: none;
   padding-top: 20px;
@@ -320,6 +321,38 @@ dt {
 .buy-button a:hover {
   background-color: #f1f1f1;
   color: rgb(68, 75, 98);
+  transition: 0.5s;
+  transform: scale(1.02);
+}
+
+#filters {
+  display: flex;
+  gap: 1rem;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.filterbtn {
+  font-family: Open-Sans;
+  font-weight: 300;
+  font-size: large;
+  text-align: center;
+  background-color: #000000;
+  width: 200px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.filterbtn:hover {
+  background-color: #2f2f2f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
   transition: 0.5s;
   transform: scale(1.02);
 }
