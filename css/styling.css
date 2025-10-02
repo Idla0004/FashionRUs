@@ -200,6 +200,37 @@ h2 {
   margin: 0;
 }
 
+#sorting {
+  display: flex;
+  gap: 1rem;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+#sorting button {
+  font-family: Open-Sans;
+  font-weight: 300;
+  font-size: large;
+  text-align: center;
+  background-color: #525252;
+  width: 200px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#sorting button:hover {
+  background-color: #929292;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.02);
+}
 /* --- Product side --- */
 
 .listproduct {
