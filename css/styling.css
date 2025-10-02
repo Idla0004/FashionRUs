@@ -1,3 +1,8 @@
+.headline {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
 .navbar {
   font-family: Poppins;
   display: flex;
@@ -57,12 +62,14 @@
 }
 
 .listlink {
-  padding: 50px;
+  padding: 5rem;
   margin: 10px;
   background-color: #b0b4bd;
   color: #000000;
   text-decoration: none;
   border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: larger;
 }
 
 .listlink:hover {
@@ -373,8 +380,8 @@ dt {
   color: white;
   text-decoration: none;
   border: none;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 8px;
+  padding: 8px;
   cursor: pointer;
 }
 
@@ -382,7 +389,7 @@ dt {
   background-color: #2f2f2f;
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
   transform: scale(1.02);
