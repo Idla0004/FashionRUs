@@ -1,8 +1,14 @@
+.headline {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
 .navbar {
   font-family: Poppins;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   text-decoration: none;
   padding-top: 20px;
@@ -56,12 +62,14 @@
 }
 
 .listlink {
-  padding: 50px;
+  padding: 5rem;
   margin: 10px;
   background-color: #b0b4bd;
   color: #000000;
   text-decoration: none;
   border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: larger;
 }
 
 .listlink:hover {
@@ -78,14 +86,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-template-rows: 1fr 1fr;
-  gap: 1em;
+  gap: 1rem;
   padding: 20px;
 }
 
 /* --- Productlist side --- */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   padding: 20px;
 }
@@ -97,17 +105,18 @@
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.362);
   padding: 20px;
-  height: 490px;
+  height: 620px;
+  width: 300px;
   margin: 10px;
 }
 
-.product-card img {
+.products img {
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  max-height: fit-content;
   object-fit: contain;
   border-radius: 5px;
-  margin: 0 auto 2px;
+  margin: 0 auto 0px;
 }
 
 h2 {
@@ -142,7 +151,6 @@ h2 {
 
 .sale {
   color: red;
-  text-decoration: line-through;
 }
 
 .percent {
@@ -150,7 +158,9 @@ h2 {
   font-weight: bold;
   background-color: red;
   padding: 5px 8px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  max-width: 40px;
   height: fit-content;
 }
 
@@ -197,6 +207,37 @@ h2 {
   margin: 0;
 }
 
+#sorting {
+  display: flex;
+  gap: 1rem;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+#sorting button {
+  font-family: Open-Sans;
+  font-weight: 300;
+  font-size: large;
+  text-align: center;
+  background-color: #525252;
+  width: 200px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#sorting button:hover {
+  background-color: #929292;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.02);
+}
 /* --- Product side --- */
 
 .listproduct {
@@ -276,7 +317,7 @@ dt {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.362);
   padding: 20px;
-  height: 250px;
+  height: 300px;
   width: 100%;
   max-width: 400px;
   margin: 10px;
@@ -295,7 +336,7 @@ dt {
     padding-left: 5rem;
   }
 
-  .product-image {
+  .img {
     order: 0;
     flex: 1;
   }
@@ -318,6 +359,38 @@ dt {
 .buy-button a:hover {
   background-color: #f1f1f1;
   color: rgb(68, 75, 98);
+  transition: 0.5s;
+  transform: scale(1.02);
+}
+
+#filters {
+  display: flex;
+  gap: 1rem;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.filterbtn {
+  font-family: Open-Sans;
+  font-weight: 300;
+  font-size: large;
+  text-align: center;
+  background-color: #000000;
+  width: 200px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.filterbtn:hover {
+  background-color: #2f2f2f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
   transition: 0.5s;
   transform: scale(1.02);
 }

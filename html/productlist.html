@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styling.css" />
     <link rel="stylesheet" href="/css/layout.css" />
+    <script src="/js/productlist.js" defer></script>
     <title>FashionRUs</title>
   </head>
   <body>
@@ -16,52 +17,19 @@
         <a href="#">Seasons</a>
       </nav>
     </header>
-    <main>
+    <main id="mainContent">
       <h2 class="headline">Our Brands</h2>
-      <div class="products">
-        <div class="product-card">
-          <img src="/img/puma1.webp" alt="Puma backpack" />
-          <h2>Puma backpack</h2>
-          <p class="title">Backpack | Puma</p>
-          <p class="price">DKK 699,-</p>
-          <button class="read"><a href="product.html">Læs mere</a></button>
-        </div>
-        <div class="product-card">
-          <img src="/img/puma2.webp" alt="Puma backpack" />
-          <h2>Puma backpack</h2>
-          <p class="title">Backpack | Puma</p>
-          <p class="price">DKK 899,-</p>
-          <button class="read"><a href="product.html">Læs mere</a></button>
-        </div>
-        <div class="product-card soldout">
-          <img src="/img/bodysuit.webp" alt="bodysuit" />
-          <h2>Bodysuit</h2>
-          <p class="title">Full body | Nabalji</p>
-          <p class="price">DKK 499,-</p>
-          <button class="read"><a href="product.html">Læs mere</a></button>
-        </div>
-        <p class="soldouttext">SOLD OUT</p>
-        <div class="product-card">
-          <img src="/img/reebok.webp" alt="Reebok sneakers" />
-          <h2>Reebok Sneakers</h2>
-          <p class="title">Shoes | Reebok</p>
-          <p class="price">DKK 799,-</p>
-          <button class="read"><a href="product.html">Læs mere</a></button>
-        </div>
-        <div class="product-card">
-          <img src="/img/reebok2.webp" alt="Reebok sneakers" />
-          <h2>Reebok Sneakers</h2>
-          <p class="title">Shoes | Reebok</p>
-          <div class="price-container">
-            <p class="price">
-              <span class="sale">DKK 799,-</span><br />
-              Now: DKK 479,-
-            </p>
-            <p class="percent">-40%</p>
-          </div>
-          <button class="read"><a href="product.html">Læs mere</a></button>
-        </div>
-      </div>
+      <section id="filters">
+        <button class="filterbtn" data-gender="All">All</button>
+        <button class="filterbtn" data-gender="Unisex">Unisex</button>
+        <button class="filterbtn" data-gender="Women">Womens</button>
+        <button class="filterbtn" data-gender="Men">Men</button>
+      </section>
+      <section id="sorting">
+        <button data-direction="lohi">Pris lav til høj</button>
+        <button data-direction="hilo">Pris høj til lav</button>
+      </section>
+      <section class="products"></section>
     </main>
     <footer>
       <nav class="footer">
