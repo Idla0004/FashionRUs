@@ -22,9 +22,6 @@ document
 document.querySelector("#sorting").addEventListener("click", showSorted);
 
 function showFiltered(event) {
-  // console.log(event.target);
-  // console.log(event.target.dataset.gender);
-  // console.log(this.dataset.gender);
   const gender = this.dataset.gender;
   if (gender == "All") {
     showProduct(allData);
@@ -42,10 +39,8 @@ fetch(`https://kea-alt-del.dk/t7/api/products?limit=20&category=${category}`)
   });
 
 function showProduct(products) {
-  console.log("products");
   productListContainer.innerHTML = "";
   products.forEach((element) => {
-    console.log(element);
     productListContainer.innerHTML += `
   <div class="product-card ${element.soldout ? "soldout" : ""} ${
       element.discount ? "sale" : ""
