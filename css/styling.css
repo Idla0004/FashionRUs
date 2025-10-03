@@ -175,11 +175,9 @@ h2 {
   padding: 10px 0;
   margin-top: auto;
   cursor: pointer;
-}
-
-.read a {
   text-decoration: none;
   color: black;
+  text-align: center;
 }
 
 .read:hover {

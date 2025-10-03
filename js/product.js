@@ -10,7 +10,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
 function showProduct(product) {
   mainContent.innerHTML = ` <nav class="listproduct">
         <li><a href="index.html">Home</a></li>
-        <li><a href="http://127.0.0.1:5500/html/index.html">Brands</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html">Back</a></li>
         <li><a href="#">${product.brandname}</a></li>
         <p class="description">${product.brandname}</p>
       </nav>
@@ -25,9 +25,9 @@ function showProduct(product) {
         <div class="product-content">
           <h1 class="product-title">${product.brandname}</h1>
           <div class="product-info">
-            <p class="product-description">
-            ${product.brandbio}
-            </p>
+   <p class="product-description">
+  ${product.brandbio ? product.brandbio : ""}
+</p>
             <dl class="info-list">
               <dt>Type</dt>
               <dd>${product.articletype}</dd>

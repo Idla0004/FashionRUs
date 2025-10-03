@@ -68,7 +68,7 @@ function showProduct(products) {
         </div>
         ${
           !element.soldout
-            ? `<button class="read"><a href="product.html?id=${element.id}">Læs mere</a></button>`
+            ? `<a class="read" href="product.html?id=${element.id}">Læs mere</a>`
             : ""
         }
       </div>
